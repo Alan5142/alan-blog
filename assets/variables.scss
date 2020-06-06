@@ -1,0 +1,14 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+$body-font-family: 'Fira Sans', sans-serif;
+
+$material-dark: (
+  'background': #171a1e
+);
+
+:not(pre) > code[class*="language-"] {
+  display: inline-block !important;
+}
