@@ -71,7 +71,6 @@
 <script>
 import 'prismjs/plugins/line-numbers/prism-line-numbers.min'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
-import 'static/prism-vsc-dark-plus.css'
 
 export default {
   async asyncData ({ params }) {
@@ -79,7 +78,6 @@ export default {
       const post = await import(`~/content/blog/${params.slug}.md`)
       const month = `${post.attributes.month}`.padStart(2, '0')
       const day = `${post.attributes.day}`.padStart(2, '0')
-      console.log(post)
       return {
         attributes: post.attributes,
         html: post.html,

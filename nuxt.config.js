@@ -17,7 +17,7 @@ import 'prismjs/components/prism-sql.min'
 
 import { translations } from './translations'
 
-const files = glob.sync('**/*.md', { cwd: 'articles' })
+const files = glob.sync('**/*.md', { cwd: 'content/blog' })
 
 function getSlugs (post, _) {
   const slug = post.substr(0, post.lastIndexOf('.'))
@@ -26,10 +26,11 @@ function getSlugs (post, _) {
 
 export default {
   mode: 'universal',
+  router: {
+    base: '/'
+  },
   generate: {
-    routes () {
-      return files.map(getSlugs)
-    }
+    routes: files.map(getSlugs)
   },
   /*
   ** Headers of the page
@@ -46,7 +47,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' },
-      { rel: 'stylesheet', href: 'prismjs/themes/prism.css' }
+      { rel: 'stylesheet', href: 'prismjs/themes/prism.css' },
+      { rel: 'stylesheet', href: '~static/prism-vsc-dark-plus.css' },
     ]
   },
   /*
@@ -78,10 +80,11 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: ['en', 'es'],
+        // locales: ['en', 'es'],
+        locales: ['es'],
         defaultLocale: 'es',
         vueI18n: {
-          fallbackLocale: 'en',
+          fallbackLocale: 'es',
           messages: translations
         }
       }
