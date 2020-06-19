@@ -7,13 +7,16 @@ import markdownIt from 'markdown-it'
 import markdownItPrism from 'markdown-it-prism'
 
 import 'prismjs/components/prism-clike.min'
-import 'prismjs/components/prism-c'
-import 'prismjs/components/prism-cpp.min'
+import './prism-c'
+import './prism-cpp'
 import 'prismjs/components/prism-csharp.min'
 import 'prismjs/components/prism-typescript.min'
 import 'prismjs/components/prism-rust.min'
 import 'prismjs/components/prism-arduino.min'
 import 'prismjs/components/prism-sql.min'
+import 'prismjs/components/prism-cmake.min'
+import 'prismjs/components/prism-powershell.min'
+import 'prismjs/components/prism-toml.min'
 
 import { translations } from './translations'
 
@@ -26,9 +29,6 @@ function getSlugs (post, _) {
 
 export default {
   mode: 'universal',
-  router: {
-    base: '/'
-  },
   generate: {
     routes: files.map(getSlugs)
   },
@@ -48,7 +48,7 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' },
       { rel: 'stylesheet', href: 'prismjs/themes/prism.css' },
-      { rel: 'stylesheet', href: '~static/prism-vsc-dark-plus.css' },
+      { rel: 'stylesheet', href: '~static/prism-vsc-dark-plus.css' }
     ]
   },
   /*

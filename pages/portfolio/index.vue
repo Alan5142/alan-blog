@@ -27,6 +27,7 @@
               <v-carousel-item
                 v-for="(picture, i) in project.pictures"
                 :key="i"
+                eager
               >
                 <v-img :src="picture" eager contain />
               </v-carousel-item>

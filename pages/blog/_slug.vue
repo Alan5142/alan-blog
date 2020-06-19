@@ -4,12 +4,6 @@
       <v-img gradient="180deg, rgba(1,1,1,0) 0%, rgba(23,26,30,0.8) 90%, rgba(23,26,30,1) 100%" :src="attributes.picture" max-height="500px">
         <v-container class="max-size">
           <v-row class="max-size" align="end" justify="start">
-            <v-avatar class="mr-2" height="38px" width="38px">
-              <img
-                src="https://pbs.twimg.com/profile_images/1144098094243635201/PtlO7H7S_200x200.png"
-                alt="John"
-              >
-            </v-avatar>
             <v-icon>mdi-calendar</v-icon>
             <span class="mr-2">{{ date }}</span>
             <v-icon>
@@ -30,9 +24,9 @@
       </h1>
     </v-col>
 
-    <v-row class="content">
-      <div v-html="html" />
-    </v-row>
+    <v-col cols="12">
+      <div class="content" v-html="html"></div>
+    </v-col>
 
     <v-col cols="12">
       <no-ssr>
@@ -71,6 +65,9 @@
 <script>
 import 'prismjs/plugins/line-numbers/prism-line-numbers.min'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import 'prismjs/plugins/command-line/prism-command-line.min'
+import 'prismjs/plugins/command-line/prism-command-line.css'
+import 'static/prism-vsc-dark-plus.css'
 
 export default {
   async asyncData ({ params }) {

@@ -2,12 +2,13 @@
   <v-container>
     <v-col cols="12">
       <v-row
+        class="mb-6"
         v-for="post in posts"
         :key="post.attributes.title"
         justify="center"
       >
         <v-card
-          class="card-size"
+          class="card-size pd-6"
           elevation="10"
         >
           <nuxt-link :to="getPermalink(post)">
@@ -33,7 +34,7 @@
 
           <v-card-text class="text--primary">
             <div>{{ post.attributes.path }}</div>
-            <div>{{ post.attributes.excerpt }}</div>
+            <div style="text-align: justify">{{ post.attributes.excerpt }}</div>
           </v-card-text>
 
           <v-card-actions>
@@ -130,7 +131,7 @@ export default {
       return resolve(key)
     })
     return {
-      posts: imports,
+      posts: imports.reverse(),
       sheet: false
     }
   },

@@ -4,12 +4,12 @@ year: 2020
 month: 06
 day: 05
 hour: '22:00'
-excerpt: Finalmente decidí abrir un blog y hay un par de razones para 
+excerpt: Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos...
 picture: /images/blog/first_post/header.png
 picture_attribution: Andy Holmes
 ---
 
-Este post va a ser algo corto y, principalmente es transmitir el porqué de esta página, principalmente son 3 motivos:
+Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos:
 * Compartir conocimiento
 * Dar a conocer un poco sobre mí y sobre lo que he hecho
 * Por gusto 😁
@@ -28,6 +28,6 @@ Espero que el contenido de este sitio sea de su agrado y, sobre todo, si pueden 
 #include <iostream>
 int main()
 {
-    std::cout << "Let's do something!";
+    std::cout << "Let's begin!";
 }
 ```
