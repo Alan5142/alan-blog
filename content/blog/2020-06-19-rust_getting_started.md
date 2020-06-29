@@ -3,7 +3,7 @@ title: Iniciando con Rust
 year: 2020
 month: 06
 day: 19
-hour: 00:58'
+hour: 00:58
 excerpt: Rust es un lenguaje de programación que ha estado creciendo en popularidad y con buenas razones, he decidido probarlo y te comparto un breve resúmen de este lenguaje y algunas de mis opiniones respecto a este lenguaje
 picture: /images/blog/rust_getting_started/Rust.png
 ---
@@ -172,11 +172,11 @@ Todo esta perfecto
 ¡Rust es un lenguaje mágnifico!, y no solo eso, viniendo de C++ la adopción ha sido muy sencilla y creo que esto es un punto bastante fuerte del lenguaje,
 quizá llega a ser un poco molesto la cantidad de veces que ``rustc`` no te permite compilar pero lo hace con mucha razón: el compilador de rust
 es uno de sus puntos más fuertes, los mensajes son muy claros, te indica dónde puede estar el error y posiblemente como solucionarlo y muchas
-veces te previene de cosas que probablemente no hayan sucedido por tu mente, simplemente es una maravilla 😎.
+veces te impide realizar acciones que puedan suponer un riesgo (como utilizar una variable que ya ha sido movida), simplemente es una maravilla 😎.
 
 Además, hay algunas cosas que me gustaría que C++ tuviera:
 * Que los compiladores sean más amigables con los errores (especialmente con los errores del _linker_ y con las templates)
-* Un géstor de paquetes (aunque lentamente la situación está mejorando con herramientas como [vcpkg](https://github.com/Microsoft/vcpkg) y [conan]())
+* Un géstor de paquetes (aunque lentamente la situación está mejorando con herramientas como [vcpkg](https://github.com/Microsoft/vcpkg) y [conan](https://conan.io/))
 * Los traits :( (aunque los _Concepts_ de C++20 pueden ayudar en esto)
 * ¡Los tiempos de compilación!, cuando he utilizado _Boost_, específicamente Asio y Beast, los tiempos de compilación son exageradamente grandes (principalmente por culpa de las templates)
 

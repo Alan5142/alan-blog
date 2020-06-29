@@ -10,22 +10,22 @@
               mdi-clock
             </v-icon>
             <span>{{ attributes.hour }}</span>
-            <v-spacer></v-spacer>
+            <v-spacer />
             <span v-if="attributes.picture_attribution !== undefined">
-              Imagen en dominio público por {{attributes.picture_attribution}}
+              Imagen en dominio público por {{ attributes.picture_attribution }}
             </span>
           </v-row>
         </v-container>
       </v-img>
     </v-col>
     <v-col cols="12">
-      <h1 class="content" style="font-size: 4em">
+      <h1 class="content" style="font-size: 3em; overflow-wrap: break-word; hyphens: none">
         {{ attributes.title }}
       </h1>
     </v-col>
 
     <v-col cols="12">
-      <div class="content" v-html="html"></div>
+      <div class="content" v-html="html" />
     </v-col>
 
     <v-col cols="12">
@@ -82,6 +82,16 @@ export default {
       }
     } catch (error) {
       return false
+    }
+  },
+  head () {
+    return {
+      title: this.attributes.title,
+      meta: [
+        { property: 'og:title', content: this.attributes.title },
+        { property: 'og:image', content: `https://alan5142.github.io${this.attributes.picture}` },
+        { property: 'og:description', content: `${this.attributes.excerpt}` }
+      ]
     }
   }
 }

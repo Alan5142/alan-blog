@@ -64,5 +64,15 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Inicio',
+      meta: [
+        { property: 'og:title', content: 'Inicio' },
+        { property: 'og:image', content: 'https://alan5142.github.io/me.png' },
+        { property: 'og:description', content: 'Alan Ramírez Herrera' }
+      ]
+    }
+  }
 }
 </script>

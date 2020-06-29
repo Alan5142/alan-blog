@@ -2,9 +2,9 @@
   <v-container>
     <v-col cols="12">
       <v-row
-        class="mb-6"
         v-for="post in posts"
         :key="post.attributes.title"
+        class="mb-6"
         justify="center"
       >
         <v-card
@@ -34,13 +34,15 @@
 
           <v-card-text class="text--primary">
             <div>{{ post.attributes.path }}</div>
-            <div style="text-align: justify">{{ post.attributes.excerpt }}</div>
+            <div style="text-align: justify">
+              {{ post.attributes.excerpt }}
+            </div>
           </v-card-text>
 
           <v-card-actions>
             <v-spacer />
 
-            <v-bottom-sheet v-model="sheet">
+            <v-bottom-sheet>
               <template v-slot:activator="{ on }">
                 <v-btn
                   color="purple"
@@ -161,7 +163,18 @@ export default {
       return 'https://alan5142.github.io'
     },
     getPermalink (post) {
+      console.log(`post: ${post.attributes.title}, path: ${post.meta.resourcePath}`)
       return `/blog/${post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]}`
+    }
+  },
+  head () {
+    return {
+      title: 'Blog',
+      meta: [
+        { property: 'og:title', content: 'Blog' },
+        { property: 'og:image', content: 'https://alan5142.github.io/me.png' },
+        { property: 'og:description', content: 'Blog de Alan Ramírez Herrera' }
+      ]
     }
   }
 }

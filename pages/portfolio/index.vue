@@ -114,6 +114,7 @@ export default {
   data () {
     return {
       projects: [
+        /*
         {
           name: 'FooEngine [WIP]',
           year: '????',
@@ -124,7 +125,7 @@ export default {
           technology: [
             'cpp'
           ]
-        },
+        }, */
         {
           name: 'Kingdom Madness',
           year: 2020,
@@ -216,6 +217,16 @@ export default {
           return '/images/angular-logo.png'
       }
       return ''
+    }
+  },
+  head () {
+    return {
+      title: 'Portafolio',
+      meta: [
+        { property: 'og:title', content: 'Portafolio' },
+        { property: 'og:image', content: 'https://alan5142.github.io/images/portfolio/km2.png' },
+        { property: 'og:description', content: 'Portafolio de proyectos de Alan' }
+      ]
     }
   }
 }
