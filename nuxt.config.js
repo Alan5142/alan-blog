@@ -146,6 +146,6 @@ export default {
     }
   },
   sitemap: {
-
+    hostname: 'https://alan5142.github.io'
   }
 }
