@@ -1,5 +1,5 @@
 <template>
-  <v-content class="pt-1">
+  <v-content>
     <v-img gradient="180deg, rgba(1,1,1,0) 0%, rgba(23,26,30,0.8) 90%, rgba(23,26,30,1) 100%" :src="attributes.picture" max-height="500px">
       <v-container class="max-size">
         <v-row class="max-size content" align="end" justify="start">
@@ -13,6 +13,7 @@
       </v-container>
     </v-img>
     <v-col cols="12">
+    
       <span v-if="attributes.picture_attribution !== undefined" class="content" style="font-size: 0.8em">
         Imagen en dominio público por {{ attributes.picture_attribution }}
       </span>
@@ -21,7 +22,7 @@
       </h1>
     </v-col>
 
-    <v-col cols="12">
+    <v-col cols="12" style="overflow-wrap: break-word">
       <div class="content" v-html="html" />
     </v-col>
 

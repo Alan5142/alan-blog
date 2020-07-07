@@ -37,10 +37,21 @@ tr:nth-child(even) {
 th {
   background-color: #78b800;
   color: #171a1e;
+  max-width: 100%;
 }
 
 table {
   width: 100%;
+  max-width: 100%;
   text-align: center;
   margin-bottom: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+code {
+  max-width: 100%;
 }

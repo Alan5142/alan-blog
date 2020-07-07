@@ -4,6 +4,7 @@
     elevation="24"
     app
     class="header"
+    style="max-width: 100%"
   >
     <v-toolbar-title
       style="cursor:pointer"
