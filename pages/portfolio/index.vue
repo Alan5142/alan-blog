@@ -1,6 +1,6 @@
 <template>
   <v-container class="pl-0 pr-0">
-    <v-col cols="12" class="pl-1 pr-1">
+    <v-col cols="12">
       <v-row justify="center">
         <h1 style="text-align: center; font-size: 2.5em">
           Mis proyectos 💻
@@ -104,7 +104,8 @@
 
   @media screen and (max-width: 959px) {
     .card {
-      width: 100%;
+      width: 95%;
+      max-width: 100%;
     }
   }
 </style>

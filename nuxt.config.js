@@ -84,6 +84,7 @@ export default {
   */
   modules: [
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
     [
       'nuxt-i18n',
       {
@@ -143,5 +144,8 @@ export default {
         }
       })
     }
+  },
+  sitemap: {
+
   }
 }

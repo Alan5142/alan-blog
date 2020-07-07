@@ -29,24 +29,29 @@
             Programo principalmente en C++, C# y TypeScript
           </p>
         </v-row>
-        <v-row align="center" justify="center">
+        <v-row class="mb-2" align="center" justify="center">
           <h1>
             👉
           </h1>
-          <v-btn color="#1178f2" outlined href="https://www.facebook.com/alan.ramirezherrera.9" target="_blank">
+          <v-btn class="mr-1" color="#1178f2" outlined href="https://www.facebook.com/alan.ramirezherrera.9" target="_blank">
             Facebook
           </v-btn>
 
-          <v-btn color="#1da1f2" outlined href="https://twitter.com/Alan5142" target="_blank">
+          <v-btn class="mr-1" color="#1da1f2" outlined href="https://twitter.com/Alan5142" target="_blank">
             Twitter
           </v-btn>
           <v-btn color="white" outlined href="https://github.com/Alan5142/" target="_blank">
             GitHub
           </v-btn>
         </v-row>
-        <v-row justify="center">
+        <v-row class="mb-2" justify="center">
           <v-btn outlined color="primary" href="mailto:alan5142@hotmail.com?Subject=¡Hola!" target="_blank">
-            ¡Enviame un Email✉!
+            ¡Enviame un Email</p>!
+          </v-btn>
+        </v-row>
+        <v-row justify="center"> 
+          <v-btn color="#78b800" outlined href="/Resume.pdf" target="_blank">
+            Descargar CV/Resume
           </v-btn>
         </v-row>
       </v-col>

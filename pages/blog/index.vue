@@ -8,7 +8,7 @@
         justify="center"
       >
         <v-card
-          class="card-size pd-6"
+          class="card-size"
           elevation="10"
         >
           <nuxt-link :to="getPermalink(post)">
