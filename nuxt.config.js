@@ -5,6 +5,10 @@ import * as Mode from 'frontmatter-markdown-loader/mode'
 import markdownIt from 'markdown-it'
 
 import markdownItPrism from 'markdown-it-prism'
+import markdownItAttrs from 'markdown-it-attrs'
+import markdownItCollapsible from 'markdown-it-collapsible'
+import markdownItGithubHeadings from 'markdown-it-github-headings'
+import markdownItNamedHeadings from 'markdown-it-named-headings'
 
 import 'prismjs/components/prism-clike.min'
 import './prism-c'
@@ -127,7 +131,12 @@ export default {
         loader: 'frontmatter-markdown-loader',
         options: {
           mode: [Mode.HTML, Mode.META],
-          markdownIt: markdownIt({ html: true }).use(markdownItPrism)
+          markdownIt: markdownIt({ html: true })
+            .use(markdownItNamedHeadings)
+            .use(markdownItPrism)
+            .use(markdownItAttrs)
+            .use(markdownItCollapsible)
+            .use(markdownItGithubHeadings)
         }
       })
     }

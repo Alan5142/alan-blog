@@ -4,7 +4,7 @@ year: 2020
 month: 06
 day: 05
 hour: '22:00'
-excerpt: Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos...
+excerpt: Este post va a ser algo corto y hablaré del porqué de esta página, principalmente son 3 motivos, compartir conocimiento, dar a conocer un poco sobre mí y sobre lo que he hecho y por gusto
 picture: /images/blog/first_post/header.png
 picture_attribution: Andy Holmes
 ---

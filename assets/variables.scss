@@ -29,3 +29,18 @@ blockquote {
 blockquote p {
   display: inline;
 }
+
+tr:nth-child(even) {
+  background-color: #0000005d;
+}
+
+th {
+  background-color: #78b800;
+  color: #171a1e;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}

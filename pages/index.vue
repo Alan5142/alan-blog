@@ -70,7 +70,10 @@ export default {
       meta: [
         { property: 'og:title', content: 'Inicio' },
         { property: 'og:image', content: 'https://alan5142.github.io/me.png' },
-        { property: 'og:description', content: 'Alan Ramírez Herrera' }
+        { property: 'og:description', content: 'Alan Ramírez Herrera' },
+        { property: 'google-site-verification', content: 'jLpMw-GQBMCCNVvIEAZLJNUY8fGStpOQZoQ-IBZ8-eo' },
+        { property: 'og:url', content: 'https://alan5142.github.io' }
+
       ]
     }
   }

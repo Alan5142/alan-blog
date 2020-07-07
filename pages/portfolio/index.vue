@@ -225,7 +225,8 @@ export default {
       meta: [
         { property: 'og:title', content: 'Portafolio' },
         { property: 'og:image', content: 'https://alan5142.github.io/images/portfolio/km2.png' },
-        { property: 'og:description', content: 'Portafolio de proyectos de Alan' }
+        { property: 'og:description', content: 'Portafolio de proyectos de Alan' },
+        { property: 'og:url', content: 'https://alan5142.github.io/portfolio' }
       ]
     }
   }

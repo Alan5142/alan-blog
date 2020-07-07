@@ -163,7 +163,6 @@ export default {
       return 'https://alan5142.github.io'
     },
     getPermalink (post) {
-      console.log(`post: ${post.attributes.title}, path: ${post.meta.resourcePath}`)
       return `/blog/${post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]}`
     }
   },
@@ -173,7 +172,8 @@ export default {
       meta: [
         { property: 'og:title', content: 'Blog' },
         { property: 'og:image', content: 'https://alan5142.github.io/me.png' },
-        { property: 'og:description', content: 'Blog de Alan Ramírez Herrera' }
+        { property: 'og:description', content: 'Blog de Alan Ramírez Herrera' },
+        { property: 'og:url', content: 'https://alan5142.github.io/blog' }
       ]
     }
   }

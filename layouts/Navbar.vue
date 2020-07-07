@@ -33,7 +33,6 @@
 </style>
 
 <script>
-import * as $router from 'vue-router'
 
 export default {
 }

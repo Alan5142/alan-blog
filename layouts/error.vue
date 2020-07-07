@@ -2,7 +2,9 @@
   <v-app dark>
     <v-col cols="12">
       <v-row align="center" justify="center">
-        <h1 style="font-size: 2.5em">(ノ°益°)ノ</h1>
+        <h1 style="font-size: 2.5em">
+          (ノ°益°)ノ
+        </h1>
       </v-row>
       <v-row justify="center">
         <h1>¡Vuelve a la página principal! 😀</h1>
