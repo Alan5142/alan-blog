@@ -53,6 +53,7 @@
   .content {
     margin-left: 20%;
     margin-right: 20%;
+    overflow-wrap: break-word
   }
 
   @media screen and (max-width: 767px) {
