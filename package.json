@@ -16,6 +16,7 @@
     "@nuxt/typescript-runtime": "^0.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@types/prismjs": "^1.16.1",
     "frontmatter-markdown-loader": "^3.5.0",
     "nuxt": "^2.0.0",
     "nuxt-i18n": "^6.12.2"
