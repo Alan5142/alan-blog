@@ -136,8 +136,8 @@ export default {
         options: {
           mode: [Mode.HTML, Mode.META],
           markdownIt: markdownIt({ html: true })
-            .use(markdownItNamedHeadings)
             .use(markdownItPrism)
+            .use(markdownItNamedHeadings)
             .use(markdownItAttrs)
             .use(markdownItCollapsible)
             .use(markdownItGithubHeadings)

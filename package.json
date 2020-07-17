@@ -19,7 +19,13 @@
     "@types/prismjs": "^1.16.1",
     "frontmatter-markdown-loader": "^3.5.0",
     "nuxt": "^2.0.0",
-    "nuxt-i18n": "^6.12.2"
+    "nuxt-i18n": "^6.12.2",
+    "markdown-it": "^11.0.0",
+    "markdown-it-attrs": "^3.0.3",
+    "markdown-it-collapsible": "^1.0.0",
+    "markdown-it-github-headings": "^2.0.0",
+    "markdown-it-named-headings": "^1.1.0",
+    "markdown-it-prism": "^2.0.5"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
