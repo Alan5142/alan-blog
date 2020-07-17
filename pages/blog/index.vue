@@ -15,6 +15,7 @@
             <v-img
               class="white--text align-end"
               height="200px"
+              color
               :max-width="maxImageWidth"
               :src="post.attributes.picture"
             >
