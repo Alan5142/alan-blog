@@ -44,7 +44,7 @@ La versión más nueva a día de hoy es la 1.44.0
 El proceso de instalación de Rust es muy sencillo, basta con descargar [rustup](https://www.rust-lang.org/tools/install) de la página oficial,
 en el caso de Windows (que es el sistema operativo que utilizo principalmente), abrirá una ventana y tendrá el siguiente contenido:
 
-```cmd
+```bash
 Current installation options:
 
 

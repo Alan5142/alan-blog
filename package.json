@@ -5,7 +5,7 @@
   "author": "Alan Ramírez Herrera",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts --hostname 0.0.0.0",
+    "dev": "nuxt-ts --hostname ::",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
